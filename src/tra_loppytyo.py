@@ -1,21 +1,19 @@
-from os import path #Only used to check if given file exists
-import time
-
-
 def ask_file():
         print("\nType the name of the input file. For example \"test.txt\".")
         while(True):
-            print("")
-            input_file = input("Name of the file: ")
-            if input_file[-4:] == ".txt":
-                #Get rid of imported lib trough FileNotFoundError?
-                if path.exists(input_file):
+            try:
+                print("")
+                input_file = input("Name of the file: ")
+                if input_file[-4:] == ".txt":
+                    #Get rid of imported lib trough FileNotFoundError?
+                    with open(input_file) as test:
+                        pass
                     return input_file
                 else:
-                    print("No", input_file, "in directory.")
+                    print("Expecing a .txt file.")
                     continue
-            else:
-                print("Expecing a .txt file.")
+            except FileNotFoundError:
+                print("No", input_file, "in directory.")
                 continue
 
 
