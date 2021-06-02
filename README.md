@@ -6,10 +6,15 @@ Etsii syötetystä graafista reitin pisteestä 1 syötettyyn määränpäähän,
 ### Syötetään antamalla tiedoston nimi. Oletuksena, että tiedosto on samassa kansiossa ja se on alla olevassa formaatissa.
 
 <pisteiden_lkm>   <sivujen_lkm>
+
 <sivun_lähtöpiste>    <sivun_päätepiste>    <sivun_paino>
+
 <sivun_lähtöpiste>    <sivun_päätepiste>    <sivun_paino>
+
 ...
+
 <sivun_lähtöpiste>    <sivun_päätepiste>    <sivun_paino>
+
 <päätepiste>
 
 
@@ -22,8 +27,13 @@ katso myös esim_syote.txt
 reitti:
 
 1
+
 ...
+
 <reitille kuuluvat kaupungit riveittäin>
+
 ...
+
 <määränpää>
+
 matalimman reitin korkein kohta: <vastaus>
